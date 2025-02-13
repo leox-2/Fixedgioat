@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 🐐 | Goat Bot V2 ]";
+const doNotDelete = "[ https://www.facebook.com/mind.ur.own.business.113]";
 /**
 * @author NTKhang
 * @author: do not delete it
