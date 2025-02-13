@@ -1,4 +1,6 @@
-config: {
+// , cmd install pp.js 
+module.exports = {
+ config: {
  name: "profile",
  aliases: ["pfp", "pp"],
  version: "1.1",
