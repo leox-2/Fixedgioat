@@ -16,7 +16,7 @@ function convertFtoC(F) {
 	return Math.floor((F - 32) / 1.8);
 }
 function formatHours(hours) {
-	return moment(hours).tz("Asia/Ho_Chi_Minh").format("HH[h]mm[p]");
+	return moment(hours).tz("Asia/Dhaka").format("HH[h]mm[p]");
 }
 
 module.exports = {
@@ -76,7 +76,7 @@ module.exports = {
 		}
 
 		try {
-			dataWeather = (await axios.get(`http://api.accuweather.com/forecasts/v1/daily/10day/${areaKey}?apikey=${apikey}&details=true&language=vi`)).data;
+			dataWeather = (await axios.get(`http://api.accuweather.com/forecasts/v1/daily/10day/${areaKey}?apikey=${apikey}&details=true&language=en`)).data;
 		}
 		catch (err) {
 			return message.reply(`❌ Đã xảy ra lỗi: ${err.response.data.Message}`);
